@@ -18,10 +18,12 @@ Details
 -------
 The Miman JBoss Forge plugin modifies a project in the following way:
 
-Adds a parent to the maven pom (miman-root)
-Adds a poms reactor sub-project
-Adds the parent project that should be used as a parent for all maven-projects within the project. (this is placed in the poms directory)
+* Adds a parent to the maven pom (miman-root)
+* Adds a poms reactor sub-project
+* Adds the parent project that should be used as a parent for all maven-projects within the project. (this is placed in the poms directory)
+
 Plugin commands
+---------------
 This chapter describes all commands for this plugin
 
 ### setup
@@ -29,6 +31,6 @@ This command modifies the project to be a miman root project.
 
 It modifies the project in the following way:
 
-Adds a parent to the maven pom (miman-root)
-Adds a poms reactor sub-project
-Adds the parent project that should be used as a parent for all maven-projects within the project. (this is placed in the poms directory)
+* Adds a parent to the maven pom (miman-root)
+* Adds a poms reactor sub-project
+* Adds the parent project that should be used as a parent for all maven-projects within the project. (this is placed in the poms directory)
