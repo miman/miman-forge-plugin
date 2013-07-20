@@ -1,4 +1,4 @@
-package se.miman.forge.plugin.miman.completer;
+package eu.miman.forge.plugin.miman.completer;
 
 
 public enum ParentTypeType {

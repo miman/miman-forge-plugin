@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.miman.forge.plugin.miman.completer;
+package eu.miman.forge.plugin.miman.completer;
 
 import java.util.Arrays;
 

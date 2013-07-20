@@ -1,4 +1,4 @@
-package se.miman.forge.plugin.miman;
+package eu.miman.forge.plugin.miman;
 
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
@@ -17,7 +17,8 @@ import org.jboss.forge.shell.plugins.Plugin;
 import org.jboss.forge.shell.plugins.RequiresProject;
 import org.jboss.forge.shell.plugins.SetupCommand;
 
-import se.miman.forge.plugin.miman.facet.MimanPrjFacet;
+import eu.miman.forge.plugin.miman.facet.MimanPrjFacet;
+
 
 /**
  * Modifies a project to a MiMan project.

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.miman.forge.plugin.miman.facet;
+package eu.miman.forge.plugin.miman.facet;
 
 import javax.inject.Inject;
 

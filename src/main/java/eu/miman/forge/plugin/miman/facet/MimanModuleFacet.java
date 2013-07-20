@@ -1,7 +1,7 @@
 /**
  * 
  */
-package se.miman.forge.plugin.miman.facet;
+package eu.miman.forge.plugin.miman.facet;
 
 import javax.inject.Inject;
 
@@ -17,7 +17,7 @@ import org.jboss.forge.shell.ShellPrintWriter;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
-import se.miman.forge.plugin.miman.completer.ParentTypeType;
+import eu.miman.forge.plugin.miman.completer.ParentTypeType;
 import eu.miman.forge.plugin.util.NazgulPrjUtil;
 import eu.miman.forge.plugin.util.dto.ProjectWithPath;
 
