@@ -18,8 +18,8 @@ import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
 import se.miman.forge.plugin.miman.completer.ParentTypeType;
-import se.miman.forge.plugin.util.NazgulPrjUtil;
-import se.miman.forge.plugin.util.dto.ProjectWithPath;
+import eu.miman.forge.plugin.util.NazgulPrjUtil;
+import eu.miman.forge.plugin.util.dto.ProjectWithPath;
 
 
 /**

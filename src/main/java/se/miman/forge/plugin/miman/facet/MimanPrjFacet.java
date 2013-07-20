@@ -25,7 +25,7 @@ import org.jboss.forge.resources.FileResource;
 import org.jboss.forge.shell.plugins.Alias;
 import org.jboss.forge.shell.plugins.RequiresFacet;
 
-import se.miman.forge.plugin.util.VelocityUtil;
+import eu.miman.forge.plugin.util.VelocityUtil;
 
 /**
  * 

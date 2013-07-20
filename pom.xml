@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>se.miman.forge.plugin.miman</groupId>
+	<groupId>eu.miman.forge.plugin.miman</groupId>
 	<artifactId>miman-forge-plugin</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<properties>
@@ -81,9 +81,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>se.miman.forge.plugin.util</groupId>
+			<groupId>eu.miman.forge.plugin.util</groupId>
 			<artifactId>miman-forge-plugin-util</artifactId>
-			<version>1.0.1</version>
+			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 	<repositories>
