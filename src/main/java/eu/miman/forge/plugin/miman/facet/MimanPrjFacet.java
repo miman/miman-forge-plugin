@@ -6,11 +6,14 @@ package eu.miman.forge.plugin.miman.facet;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
 import org.apache.maven.model.Model;
 import org.apache.maven.model.Parent;
+import org.apache.maven.model.Plugin;
+import org.apache.maven.model.Repository;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.runtime.RuntimeConstants;
@@ -122,6 +125,15 @@ public class MimanPrjFacet extends BaseFacet {
 		List<String> modules = pom.getModules();
 		modules.add("poms");
 
+		// The submodules should not have the Compiler plugin, it is a pom project
+		Plugin compilerPlugin = pom.getBuild().getPluginsAsMap().get("org.apache.maven.plugins:maven-compiler-plugin");
+		if (compilerPlugin != null) {
+			pom.getBuild().getPlugins().remove(compilerPlugin);
+		}
+		
+		// Remove the JBoss Nexus repo, it isn't used
+		removeRepositoryWithId(pom, "JBOSS_NEXUS");
+		
 		mvnFacet.setPOM(pom);
 	}
 
@@ -241,4 +253,15 @@ public class MimanPrjFacet extends BaseFacet {
 		return createdResource;
 	}
 
+	private void removeRepositoryWithId(Model pom, String repoId) {
+		Iterator<Repository> repos = pom.getRepositories().iterator();
+		boolean jbossNexusFound = false;
+		while (!jbossNexusFound && repos.hasNext()) {
+			Repository repo = repos.next();
+			if (repoId.equalsIgnoreCase(repo.getId())) {
+				pom.getRepositories().remove(repo);
+				jbossNexusFound = true;
+			}
+		}
+	}
 }
